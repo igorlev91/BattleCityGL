@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.13 FATAL_ERROR)
 
-set(PROJECT_NAME BattleCity)
+set(PROJECT_NAME BattleCityGL)
 project(${PROJECT_NAME})
 
 add_executable(${PROJECT_NAME} 
@@ -17,7 +17,11 @@ add_executable(${PROJECT_NAME}
 	src/Renderer/VertexBuffer.h
 	src/Renderer/IndexBuffer.cpp
 	src/Renderer/IndexBuffer.h
-	
+	src/Renderer/VertexArray.cpp
+	src/Renderer/VertexArray.h
+	src/Renderer/VertexBufferLayout.cpp
+	src/Renderer/VertexBufferLayout.h
+
 	src/Resources/ResourceManager.cpp
 	src/Resources/ResourceManager.h
 	src/Resources/stb_image.h
