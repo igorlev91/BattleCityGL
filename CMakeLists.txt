@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.13 FATAL_ERROR)
 
-set(PROJECT_NAME BattleCity)
+set(PROJECT_NAME BattleCityGL)
 project(${PROJECT_NAME})
 
 add_executable(${PROJECT_NAME} 
@@ -40,6 +40,8 @@ add_executable(${PROJECT_NAME}
 	src/Game/GameObjects/Tank.h
 	src/Game/GameObjects/BrickWall.cpp
 	src/Game/GameObjects/BrickWall.h
+	src/Game/GameObjects/BetonWall.cpp
+	src/Game/GameObjects/BetonWall.h
 )
 
 target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_17)
